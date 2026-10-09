@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0910">
+  <meta name="description" content="Scripts premium para servidores FiveM: interfaces modernas, sistemas QBCore y recursos para roleplay.">
+  <title>NYX Development — FiveM Resources</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="NYX Development inicio">
+      <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 30V10l24 20V10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span><b>NYX<span> DEVELOPMENT</span></b><small>FIVEM RESOURCES</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#catalogo">Catálogo</a><a href="#ventajas">Ventajas</a><a href="#faq">Preguntas</a>
+      <a class="nav-discord" id="discordNav" href="#" target="_blank" rel="noopener">Discord <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> RECURSOS PREMIUM PARA FIVEM</div>
+        <h1>Tu ciudad.<br>Tu estilo.<br><span>Sin límites.</span></h1>
+        <p class="hero-lead">Scripts creados para llevar el roleplay a otro nivel. Interfaces limpias, sistemas útiles y una experiencia que se nota.</p>
+        <div class="hero-actions"><a class="button primary" href="#catalogo">Explorar tienda <span>↘</span></a><a class="button ghost" id="discordHero" href="#" target="_blank" rel="noopener">Hablar por Discord <span>↗</span></a></div>
+        <div class="hero-proof"><div class="avatars"><i>N</i><i>Q</i><i>R</i></div><span><b>Hecho para roleplay</b><small>QBCore · ESX · Optimización</small></span></div>
+      </div>
+      <div class="hero-art" aria-label="Panel visual de una interfaz de recursos FiveM">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="mock-window">
+          <div class="mock-head"><span class="window-dots"><i></i><i></i><i></i></span><span>NYX / RESOURCE HUB</span><span class="live"><i></i> ONLINE</span></div>
+          <div class="mock-body"><div class="mock-side"><div class="side-logo">N<span>.</span></div><div class="side-item active">▦</div><div class="side-item">◈</div><div class="side-item">⌘</div><div class="side-item">⚙</div></div>
+            <div class="mock-content"><div class="mock-label">CONTROL CENTER <span>v2.4.0</span></div><h3>Resource overview</h3><div class="stat-grid"><div class="stat"><small>RESOURCES</small><b>24 <em>↗</em></b><span>+4 this month</span></div><div class="stat"><small>PERFORMANCE</small><b>0.02 <em>ms</em></b><span>Optimized build</span></div></div>
+              <div class="chart-card"><div><b>System activity</b><small>Last 7 days</small></div><svg viewBox="0 0 330 90" preserveAspectRatio="none"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#a855f7" stop-opacity=".35"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></linearGradient></defs><path d="M0 68 C25 60 25 70 47 48 S78 65 98 39 S128 50 150 28 S178 44 201 21 S229 49 248 33 S280 40 300 14 S318 24 330 8 L330 90 L0 90Z" fill="url(#fill)"/><path d="M0 68 C25 60 25 70 47 48 S78 65 98 39 S128 50 150 28 S178 44 201 21 S229 49 248 33 S280 40 300 14 S318 24 330 8" fill="none" stroke="#c084fc" stroke-width="2.5"/></svg></div>
+              <div class="mock-resource"><span class="resource-icon">✳</span><span><b>Advanced Inventory</b><small>UI MODULE · READY</small></span><span class="resource-status">ACTIVE</span></div>
+            </div></div>
+        </div><div class="float-tag tag-top"><span>✦</span> PREMIUM QUALITY</div><div class="float-tag tag-bottom"><span class="tag-dot"></span> DESIGNED FOR RP</div>
+      </div>
+      <div class="hero-bottom"><span>01 / BUILT FOR IMMERSION</span><div></div><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+
+    <section class="trust-strip" id="ventajas"><span>DISEÑADO PARA COMUNIDADES EXIGENTES</span><div><b>QBCORE</b><b>ESX</b><b>OX LIBRARY</b><b>OPTIMIZED UI</b></div></section>
+
+    <section class="catalog section" id="catalogo">
+      <div class="section-head"><div><div class="eyebrow">THE RESOURCE VAULT / 001</div><h2>Recursos que marcan<br><span>la diferencia.</span></h2></div><p>Explora herramientas para mejorar tu ciudad. Cada ficha puede personalizarse con tus precios, imágenes y detalles reales.</p></div>
+      <div class="catalog-tools"><div class="filters" role="group" aria-label="Filtrar productos"><button class="filter active" data-filter="Todos">Todos <span>06</span></button><button class="filter" data-filter="UI">Interfaces</button><button class="filter" data-filter="RP">Roleplay</button><button class="filter" data-filter="Admin">Administración</button></div><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar recurso..." aria-label="Buscar recurso"></label></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="catalog-foot"><span><i class="pulse"></i> NUEVOS RECURSOS EN DESARROLLO</span><a id="catalogDiscord" href="#" target="_blank" rel="noopener">¿Buscas algo a medida? Hablemos ↗</a></div>
+    </section>
+
+    <section class="banner">
+      <div class="banner-glow"></div><div class="eyebrow">TU SERVIDOR MERECE MÁS</div><h2>No vendas solo un script.<br><span>Entrega una experiencia.</span></h2><p>¿Tienes una idea especial para tu ciudad? Conversemos sobre un recurso personalizado.</p><a class="button primary" id="customDiscord" href="#" target="_blank" rel="noopener">Solicitar desarrollo <span>↗</span></a><div class="banner-code">NYX_DEV // BUILDING THE NEXT RP</div>
+    </section>
+
+    <section class="benefits section"><div class="eyebrow">WHY NYX / 002</div><h2>Una tienda simple.<br><span>Un soporte presente.</span></h2><div class="benefit-grid"><article><div class="benefit-icon">◈</div><h3>Entrega digital</h3><p>Configura la entrega automática tras confirmar el pago con un proveedor compatible.</p></article><article><div class="benefit-icon">⌘</div><h3>Soporte por Discord</h3><p>Resuelve dudas de instalación y compatibilidad con un canal dedicado a tus clientes.</p></article><article><div class="benefit-icon">⟲</div><h3>Actualizaciones</h3><p>Indica con claridad qué incluye cada licencia y cómo se publican las actualizaciones.</p></article></div></section>
+
+    <section class="faq section" id="faq"><div class="section-head"><div><div class="eyebrow">NEED TO KNOW / 003</div><h2>Antes de <span>comprar.</span></h2></div><p>Completa estas respuestas con tus políticas reales antes de abrir la tienda al público.</p></div><div class="faq-list">
+      <details><summary>¿Con qué framework son compatibles? <span>＋</span></summary><p>Depende de cada recurso. En cada ficha debes especificar si funciona con QBCore, ESX u otros requisitos.</p></details>
+      <details><summary>¿Cómo recibo mi compra? <span>＋</span></summary><p>La plantilla no procesa pagos ni entrega archivos todavía. Al conectar un proveedor, el backend debe verificar el pago y habilitar la descarga de forma segura.</p></details>
+      <details><summary>¿Puedo pedir un recurso personalizado? <span>＋</span></summary><p>Sí: cambia el enlace de Discord por una invitación válida y define cómo cotizas los desarrollos.</p></details>
+      <details><summary>¿Qué pasa si necesito ayuda? <span>＋</span></summary><p>Usa el enlace de soporte de Discord. Publica tiempos de respuesta y condiciones de soporte que realmente puedas cumplir.</p></details>
+    </div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">N</span><span><b>NYX<span> DEVELOPMENT</span></b><small>FIVEM RESOURCES</small></span></a><span>© <span id="year"></span> NYX Development. Todos los derechos reservados.</span><a href="#inicio">VOLVER ARRIBA ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="productDialog" class="product-dialog"><button class="dialog-close" id="dialogClose" aria-label="Cerrar">×</button><div id="dialogContent"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
